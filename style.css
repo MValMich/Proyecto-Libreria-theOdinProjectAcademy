@@ -1,0 +1,82 @@
+/* CSS: Proyecto-Libreria */
+:root {
+  font-size: clamp(0.6rem, 0.75rem + 1.5vw, 2rem );
+  background: linear-gradient(120deg,rgb(3, 3, 82) , rgb(235, 230, 230), black );
+}
+
+#main-container {
+  /* border: solid 3px; */
+  width: 100%; 
+  min-height: 600px;
+  background: linear-gradient(120deg,rgb(3, 3, 82) , rgb(235, 230, 230), black );
+}
+
+#form-btn {
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(151, 211, 10);
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  text-shadow: 5px 5px 8px black;
+  background: linear-gradient(45deg,rgb(179, 3, 3), orange ,rgb(2, 2, 141))
+}
+:hover #form-btn {
+  font-size: 0.75rem;
+  box-shadow: 15px 15px 25px black;
+}
+
+dialog {
+  background: radial-gradient(grey, white, black);
+}
+
+dialog input[type='text'] {
+  font-size: large;
+  width: 100%;
+  border-radius: 10px;
+}
+
+input[type='checkbox'] {
+width: 20px;
+height: 20px;
+accent-color: yellow;
+}
+
+dialog button {
+font-size: large;
+  background: linear-gradient(360deg,rgb(1, 1, 33), white, grey);
+  border-radius: 15px;
+  font-weight: bolder;
+}
+
+#container {
+    /* border: solid 2px; */
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+
+.class-content {
+    width: 80%;
+    height:auto;
+    border: solid 1px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    padding: 10px;
+    color: rgb(1, 1, 39);
+    background: radial-gradient( yellow, rgb(178, 2, 2) );
+box-shadow: 15px 15px 25px black;
+text-shadow: 5px 5px 8px black;
+  }
+
+.borrar-btn {
+  border-radius: 15px;
+  margin: 10px;
+  font-weight: bold;
+  background: linear-gradient(45deg, black, white, red)
+}

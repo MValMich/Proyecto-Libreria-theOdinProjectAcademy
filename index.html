@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HTML: Proyecto-Libreria -->
+<div id="main-container">
+    <button id="form-btn">Ingrese un Libro</button>
+    <dialog>
+        <form id="formulario">
+            <div><input type="text" id="id-titulo" placeholder="Titulo: " value=""></div>
+            <div><input type="text" id="id-autor" placeholder="Autor: " value=""></div>
+            <div><input type="text" id="id-paginas" placeholder="Paginas: " value=""></div>
+            <div>
+                <input type="checkbox" id="id-leido">
+                <label for="id-leido">Leído</label>
+            </div>
+            <button type="submit" id="añadir-btn">Añadir Nuevo Libro</button> <button id="cerrar-btn">cerrar</button>
+        </form>
+    </dialog>
+    <div id="container"></div>
+    </div>
+</body>
+</html>
