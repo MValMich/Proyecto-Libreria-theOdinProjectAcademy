@@ -20,10 +20,10 @@ function Libro(titulo, autor, paginas, leido) {
 }
 
 function añadirLibroLibreia() {
-    const titulo = idTitulo.value.replace(/[&<>'"]/gi,"");
-    const autor = idAutor.value.replace(/[&<>'"]/gi,"");
-    const paginas = idPaginas.value.replace(/[&<>'"]/gi,"");
-    const leido = idLeido.checked;
+    const titulo = idTitulo.value.replace(/[<>{}()'"&%\-=:#?|]/gi,"");
+    const autor = idAutor.value.replace(/[<>{}()'"&%\-=:#?|]/gi,"");
+    const paginas = idPaginas.value.replace(/[<>{}()'"&%\-=:#?|]/gi,"");
+    const leido = idLeido.checked.replace(/[<>{}()'"&%\-=:#?|]/gi,"");
     const nuevoLibro = new Libro(titulo, autor, paginas, leido);
     miLibreria.push(nuevoLibro);
     mostrarLibroPatalla(nuevoLibro);
